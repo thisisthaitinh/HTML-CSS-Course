@@ -1,0 +1,40 @@
+.video-grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     column-gap: 10px;     
+     row-gap: 10px;
+     justify-items: center;
+}
+
+.thumbnail {
+     width: 100%;
+     border-radius: 20px;
+     transition: border-radius 0.3s, transform 0.2s;
+}
+
+.thumbnail:hover {
+     border-radius: 10px;
+     transform: scale(1.01);
+}
+
+.channel-picture {
+     width: 35px;
+     border-radius: 20px;
+}
+
+.video-info-grid {
+     display: grid;
+     grid-template-columns: 40px 1fr;
+     margin-top: 5px;
+}
+
+.video-title {
+     font-size: 18px;
+     font-weight: 500;
+}
+
+.video-author, .video-stats {
+     font-size: 16px;
+     color: rgb(37, 36, 36);
+     font-weight: 500;
+}
