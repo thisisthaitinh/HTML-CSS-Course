@@ -2,27 +2,36 @@
 @import url('https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css');
 @import url('https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css');
 @import url('https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 p {
-     font-family: Roboto, Arial;
-     margin: 0 0 5px 0;
+    font-family: Roboto, Arial;
+    margin: 0 0 5px 0;
 }
 
 body {
-     padding-top: 65px;
+    padding-top: 65px;
 }
+
+
 /* customize scrollbar */
+
+
 /* width */
+
 ::-webkit-scrollbar {
-     width: 7px;
+    width: 7px;
 }
+
 
 /* Handle */
+
 ::-webkit-scrollbar-thumb {
-     background: #888;
+    background: #888;
 }
 
+
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-     background: #555;
+    background: #555;
 }
