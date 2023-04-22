@@ -30,11 +30,7 @@
     width: 90px;
 }
 
-.left-section i,
-.right-section i,
-.right-section .profile,
-button,
-.logo {
+.left-section i, .right-section i, .right-section .profile, button, .logo {
     cursor: pointer;
 }
 
