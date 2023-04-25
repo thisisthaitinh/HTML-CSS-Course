@@ -1,7 +1,7 @@
 /* Header */
 
-.header {
-    height: 56px;
+header {
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -11,7 +11,7 @@
     right: 0;
     background-color: white;
     border-bottom: 1px solid rgb(223, 223, 223);
-    z-index: 1;
+    z-index: 2;
 }
 
 
@@ -28,9 +28,22 @@
 
 .logo {
     width: 90px;
+    position: relative;
 }
 
-.left-section i, .right-section i, .right-section .profile, button, .logo {
+.country {
+    position: absolute;
+    font-size: 10px;
+    font-weight: 500;
+    top: 15px;
+    left: 165px;
+}
+
+.left-section i,
+.right-section i,
+.right-section .profile,
+button,
+.logo {
     cursor: pointer;
 }
 
@@ -51,14 +64,24 @@
 }
 
 .search-bar {
+    display: flex;
+    position: relative;
     flex: 1;
     padding-left: 12px;
     height: 36px;
-    border: 1px solid rgb(194, 194, 194);
+    border: 1px solid #c2c2c2;
     border-radius: 40px 0 0 40px;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
     width: 0;
     z-index: 1;
+}
+
+.keyboard {
+    position: absolute;
+    top: 17px;
+    left: 53rem;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .search-bar::placeholder {
@@ -68,12 +91,12 @@
 }
 
 input:focus {
-    outline: none!important;
-    border: 1px solid rgb(78, 125, 255);
+    outline: none !important;
+    border: 1px solid rgb(115, 152, 255);
 }
 
 .search-icon {
-    margin-left: -5px;
+    margin-left: -1px;
     border: 1px solid rgb(194, 194, 194);
     border-radius: 0 40px 40px 0;
     width: 65px;
@@ -89,6 +112,7 @@ input:focus {
 /* Right section */
 
 .right-section {
+    position: relative;
     width: 150px;
     display: flex;
     align-items: center;
@@ -100,4 +124,44 @@ input:focus {
 .profile {
     width: 35px;
     border-radius: 20px;
+}
+
+.notification-count {
+    display: inline-block;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: rgb(255, 25, 25);
+    padding: 3px;
+    color: white;
+    border-radius: 100px;
+    border: 2px solid #fff;
+    bottom: -3px;
+    left: 7px;
+}
+
+/* Tooltip */
+.tooltip-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.tooltip-text {
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -50px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.tooltip-container:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
 }

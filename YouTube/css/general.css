@@ -3,13 +3,16 @@
 @import url('https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css');
 @import url('https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-p {
-    font-family: Roboto, Arial;
+
+p.video-title,
+p.video-author,
+p.video-stats {
     margin: 0 0 5px 0;
 }
 
 body {
-    padding-top: 65px;
+    font-family: Roboto, Arial;
+    padding: 60px 0 0 70px;
 }
 
 
@@ -34,4 +37,18 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+    .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 750px) {
+    .video-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }

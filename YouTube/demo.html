@@ -9,129 +9,162 @@
     <link rel="stylesheet" href="css/video.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css">
 </head>
+
 <body>
-    <div class="header">
+    <header>
         <div class="left-section">
             <i class="fa-sharp fa-regular fa-bars fa-lg"></i>
             <img class="logo" src="svg/logo.png" title="YouTube Home">
+            <div class="country">VN</div>
         </div>
         <div class="middle-section">
             <input class="search-bar" type="text" placeholder="Tìm kiếm">
-            <button class="search-icon"><i class="fa-sharp fa-regular fa-magnifying-glass fa-lg"></i></button>
-            <button class="voice-search-icon"><i class="fa-sharp fa-solid fa-microphone fa-lg"></i></button>
+            <!-- <img class="keyboard" src="svg/keyboard.svg"> -->
+            <div class="tooltip-container">
+                <button class="search-icon"><i class="fa-sharp fa-regular fa-magnifying-glass fa-lg"></i></button>
+                <span class="tooltip-text">Tìm kiếm</span>
+            </div>
+            <div class="tooltip-container">
+                <button class="voice-search-icon"><i class="fa-sharp fa-solid fa-microphone fa-lg"></i></button>
+                <span class="tooltip-text">Tìm kiếm bằng giọng nói</span>
+            </div>
         </div>
         <div class="right-section">
-            <i class="fa-sharp fa-regular fa-video-plus fa-lg"></i>
-            <i class="fa-sharp fa-regular fa-bell fa-lg" title="Notifications"></i>
+            <div class="tooltip-container">
+                <i class="fa-sharp fa-regular fa-video-plus fa-lg"></i>
+                <span class="tooltip-text">Tạo</span>
+            </div>
+            <div class="tooltip-container">
+                <i class="fa-sharp fa-regular fa-bell fa-lg"></i>
+                <span class="tooltip-text">Thông báo</span>
+                <div class="notification-count">9+</div>
+            </div>
             <img class="profile" src="picture/me.jpg">
         </div>
-    </div>
-    <div class="sidebar">sidebar</div>
-    <div class="video-grid">
-        <div class="video-preview">
-            <a href="https://www.youtube.com/" target="_blank">
+    </header>
+
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <img src="svg/home.svg" alt="" class="homepage">
+            <p>Trang chủ</p>
+        </div>
+        <div class="sidebar-link">
+            <img src="svg/shorts.svg" alt="" class="shorts">
+            <p>Shorts</p>
+        </div>
+        <div class="sidebar-link">
+            <img src="svg/subscribed.svg" alt="" class="subscribed-channel">
+            <p>Kênh đăng ký</p>
+        </div>
+        <div class="sidebar-link">
+            <img src="svg/library.svg" alt="" class="library">
+            <p>Thư viện</p>
+        </div>
+    </nav>
+    <main>
+        <div class="video-grid">
+            <section class="video-preview">
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="thumbnail/thumbnail_1.jpg">
+                    <div class="video-time">3:25</div>
                 </div>
-            </a>
-            <div class="video-info-grid">
-                <div class="picture">
-                    <img class="channel-picture" src="picture/subtronics.jpg">
+                <div class="video-info-grid">
+                    <div class="picture">
+                        <img class="channel-picture" src="picture/subtronics.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Marshmello x Subtronics - House Party (Official Music Video)</p>
+                        <p class="video-author">Subtronics <i class="fa-solid fa-circle-check"></i></p>
+                        <p class="video-stats">2,7 Tr luợt xem &#x2022; 1 năm trước</p>
+                    </div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Marshmello x Subtronics - House Party (Official Music Video)</p>
-                    <p class="video-author">Subtronics <i class="fa-solid fa-circle-check"></i></p>
-                    <p class="video-stats">2,7 Tr luợt xem &#x2022; 1 năm trước</p>
-                </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <a href="https://www.youtube.com/" target="_blank">
+            </section>
+            <section class="video-preview">
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="thumbnail/thumbnail_2.jpg">
+                    <div class="video-time">1:01:43</div>
                 </div>
-            </a>
-            <div class="video-info-grid">
-                <div class="picture">
-                    <img class="channel-picture" src="picture/virtual_riot.jpg">
+
+                <div class="video-info-grid">
+                    <div class="picture">
+                        <img class="channel-picture" src="picture/virtual_riot.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">VIRTUAL RIOT @ LOST LANDS 2022</p>
+                        <p class="video-author">Virtual Riot <i class="fa-solid fa-circle-check"></i></p>
+                        <p class="video-stats">128 N lượt xem &#x2022; 2 tháng trước</p>
+                    </div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">VIRTUAL RIOT @ LOST LANDS 2022</p>
-                    <p class="video-author">Virtual Riot <i class="fa-solid fa-circle-check"></i></p>
-                    <p class="video-stats">128 N lượt xem &#x2022; 2 tháng trước</p>
-                </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <a href="https://www.youtube.com/" target="_blank">
+            </section>
+            <section class="video-preview">
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="thumbnail/thumbnail_3.jpg">
+                    <div class="video-time">0:56</div>
                 </div>
-            </a>
-            <div class="video-info-grid">
-                <div class="picture">
-                    <img class="channel-picture" src="picture/disciple.jpg">
+
+                <div class="video-info-grid">
+                    <div class="picture">
+                        <img class="channel-picture" src="picture/disciple.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Akeos - Bloodlust EP [PREVIEW] </p>
+                        <p class="video-author">Disciple <i class="fa-solid fa-circle-check"></i></p>
+                        <p class="video-stats">18 N luợt xem &#x2022; 1 tháng trước</p>
+                    </div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Akeos - Bloodlust EP [PREVIEW] </p>
-                    <p class="video-author">Disciple <i class="fa-solid fa-circle-check"></i></p>
-                    <p class="video-stats">18 N luợt xem &#x2022; 1 tháng trước</p>
-                </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <a href="https://www.youtube.com/" target="_blank">
+            </section>
+            <section class="video-preview">
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="thumbnail/thumbnail_4.jpg">
+                    <div class="video-time">2:13</div>
                 </div>
-            </a>
-            <div class="video-info-grid">
-                <div class="picture">
-                    <img class="channel-picture" src="picture/skrillex.jpg">
+                <div class="video-info-grid">
+                    <div class="picture">
+                        <img class="channel-picture" src="picture/skrillex.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Skrillex & Starrah - Good Space [Official Visualizer]</p>
+                        <p class="video-author">Skrillex <i class="fa-solid fa-circle-check"></i></p>
+                        <p class="video-stats">371 N lượt xem &#x2022; 2 tháng trước</p>
+                    </div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Skrillex & Starrah - Good Space [Official Visualizer]</p>
-                    <p class="video-author">Skrillex <i class="fa-solid fa-circle-check"></i></p>
-                    <p class="video-stats">371 N lượt xem &#x2022; 2 tháng trước</p>
-                </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <a href="https://www.youtube.com/" target="_blank">
+            </section>
+            <section class="video-preview">
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="thumbnail/thumbnail_5.jpg">
+                    <div class="video-time">3:00</div>
                 </div>
-            </a>
-            <div class="video-info-grid">
-                <div class="picture">
-                    <img class="channel-picture" src="picture/the_dub_reb.jpg">
+                <div class="video-info-grid">
+                    <div class="picture">
+                        <img class="channel-picture" src="picture/the_dub_reb.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Subtronics - Nitrous Mafia (Official Visual)</p>
+                        <p class="video-author">The Dub Rebellion <i class="fa-solid fa-circle-check"></i></p>
+                        <p class="video-stats">655 N luợt xem &#x2022; 2 năm trước</p>
+                    </div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Subtronics - Nitrous Mafia (Official Visual)</p>
-                    <p class="video-author">The Dub Rebellion <i class="fa-solid fa-circle-check"></i></p>
-                    <p class="video-stats">655 N luợt xem &#x2022; 2 năm trước</p>
-                </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <a href="https://www.youtube.com/" target="_blank">
+            </section>
+            <section class="video-preview">
                 <div class="thumbnail-row">
                     <img class="thumbnail" src="thumbnail/thumbnail_6.jpg">
+                    <div class="video-time">2:51</div>
                 </div>
-            </a>
-            <div class="video-info-grid">
-                <div class="picture">
-                    <img class="channel-picture" src="picture/cyclops_recs.jpg">
+                <div class="video-info-grid">
+                    <div class="picture">
+                        <img class="channel-picture" src="picture/cyclops_recs.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Subtronics - Spacetime (feat. NEVVE)</p>
+                        <p class="video-author">Cyclops Recordings <i class="fa-solid fa-circle-check"></i></p>
+                        <p class="video-stats">726 N lượt xem &#x2022; 1 năm trước</p>
+                    </div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Subtronics - Spacetime (feat. NEVVE)</p>
-                    <p class="video-author">Cyclops Recordings <i class="fa-solid fa-circle-check"></i></p>
-                    <p class="video-stats">726 N lượt xem &#x2022; 1 năm trước</p>
-                </div>
-            </div>
+            </section>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
